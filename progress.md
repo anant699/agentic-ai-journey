@@ -6,9 +6,9 @@
 
 ## Week 1 — Python Foundations
 
-### Day 1 — Thursday, Nov 26, 2026
+### Thursday, Nov 26, 2026
 
-**Hours:** 3 | **Status:** ✅ Complete
+**Status:** ✅ Complete
 
 **What I did:**
 - Created GitHub repo `agentic-ai-journey`
@@ -33,6 +33,32 @@
 - VS Code didn't detect Python 3.12 → fixed with full-path `&` command
 - Accidentally committed `.venv/` → fixed with `git rm -r --cached .venv`
 
-**Next session:** Day 2 — Variables, types, arithmetic (handbook Section 0.2)
+### Thursday, Nov 26, 2026 — Section 0.2 (Variables, Types, Arithmetic)
+
+**Status:** ✅ Complete
+
+**What I did:**
+- Read handbook Section 0.2 (Variables, types, and arithmetic)
+- Typed every code example into `day1_variables.py` and ran each block
+- Changed values and re-ran to see what happens
+- Solved the 3 checkpoint exercises in `day1_exercises.py`
+- Committed and pushed both files to GitHub
+
+**Key concepts learned:**
+- Python infers types automatically — no need to declare them
+- Core types: `str` (text), `int` (whole numbers), `float` (decimals), `bool` (True/False), `None`
+- Type conversion using `str()`, `int()`, `float()`
+- f-strings: `f"Hello {name}"` lets you embed any variable or expression inside a string
+- String methods: `.strip()`, `.lower()`, `.upper()`, `.split()`, `.join()`, `.replace()`, `.startswith()`, `len()`
+- Arithmetic: `+`, `-`, `*`, `/` (always float), `//` (integer division), `%` (remainder), `**` (power)
+
+**What confused me / what clicked:**
+- I thought `day1_variables.py` was broken because running it printed almost nothing. It wasn't — assignment is *silent*, and only `print()` puts anything on screen. Adding a `print()` for each variable made the whole file come alive.
+- `"hello".split("l")` returning `['he', '', 'o']` threw me — where did that empty string come from? It clicked when I saw the two `l`s sit next to each other, so the piece *between* them is nothing. Checking `"hello".split("ll")` → `['he', 'o']` confirmed it.
+- `age_str` prints as `30`, looking identical to `age`. Only `type()` shows the difference, and that's exactly why `year + 1` works but `age_str + 1` would error.
+
+**Next session:** Day 3 — Functions and control flow (handbook Section 0.3)
+
+---
 
 ---
